@@ -1,0 +1,70 @@
+:root {
+    background-color: #131516;
+    color: white;
+}
+
+.wrapper {
+/* height: 50vh; */
+/*This part is important for centering*/
+display: grid;
+place-items: center;
+}
+
+.typing {
+width: 8ch;
+animation: typing 2s steps(8), blink .5s step-end infinite alternate;
+white-space: nowrap;
+overflow: hidden;
+border-right: 3px solid;
+font-family: monospace;
+font-size: 2em;
+}
+
+@keyframes typing {
+from {
+    width: 0
+}
+}
+
+@keyframes blink {
+50% {
+    border-color: transparent
+}
+}
+
+.button {
+    transition: all 100ms ease-in;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    width: 250px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    align-content: center;
+    align-items: center;
+    background-color: #F8EDE3;
+    box-shadow: 0 5px 0 #dfd3c3;
+    color: #131516;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button:hover {
+    transition: all 100ms ease-in;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 0 #dfd3c3;
+}
+
+.button:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 rgb(131, 178, 195);
+}
+
